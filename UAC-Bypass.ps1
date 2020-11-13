@@ -1,4 +1,4 @@
-#This script helps to generate C1WS "Privilege Escalation Through UAC Bypass" workbench
+#UAC-Bypass script
 
 $krishcommand = "C:\Windows\System32\cmd.exe"
 
